@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Steve Mathewson</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+        header {
+            background-color: black;
+            color: white;
+            padding: 10px 20px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: -100%;
+            display: flex;
+            align-items: center;
+            height: 60px;
+            animation: slideIn 1s forwards;
+            z-index: 1000;
+        }
+        @keyframes slideIn {
+            to {
+                left: 0;
+            }
+        }
+        header img {
+            height: 40px;
+            margin-right: 10px;
+        }
+        header h1 {
+            font-size: 24px;
+            margin: 0;
+        }
+        nav {
+            position: fixed;
+            top: 60px;
+            left: 0;
+            width: 200px;
+            background-color: black;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            padding-top: 20px;
+        }
+        nav a {
+            color: white;
+            padding: 15px;
+            text-decoration: none;
+            text-align: center;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: blue;
+        }
+        nav a.active {
+            background-color: yellow;
+            color: black;
+        }
+        .content {
+            margin-left: 220px;
+            padding: 20px;
+            padding-top: 80px;
+        }
+        .content section {
+            margin-bottom: 40px;
+        }
+        .content h2 {
+            col
