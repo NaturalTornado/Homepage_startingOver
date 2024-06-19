@@ -95,6 +95,18 @@
             <p>My name is Steve Mathewson. I am a 33-year-old sales engineer living in Colorado. I enjoy hiking in my free time and exploring the beautiful landscapes that Colorado has to offer.</p>
         </section>
     </div>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var navLinks = document.querySelectorAll('nav a');
+        var currentUrl = window.location.href;
+        navLinks.forEach(function(link) {
+            if (currentUrl.includes(link.getAttribute('href'))) {
+                link.classList.add('active');
+            }
+        });
+    });
+</script>
+
 </body>
 </html>
 
