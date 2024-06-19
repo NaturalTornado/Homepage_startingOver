@@ -95,5 +95,17 @@
             <p>Here you can showcase your work. Add your projects, achievements, or any other professional highlights.</p>
         </section>
     </div>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var navLinks = document.querySelectorAll('nav a');
+        var currentUrl = window.location.href;
+        navLinks.forEach(function(link) {
+            if (currentUrl.includes(link.getAttribute('href'))) {
+                link.classList.add('active');
+            }
+        });
+    });
+</script>
+
 </body>
 </html>
