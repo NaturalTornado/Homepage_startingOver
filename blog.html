@@ -95,5 +95,17 @@
             <p>Welcome to my blog! Here, I share my thoughts, experiences, and stories from my hikes and professional life.</p>
         </section>
     </div>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var navLinks = document.querySelectorAll('nav a');
+        var currentUrl = window.location.href;
+        navLinks.forEach(function(link) {
+            if (currentUrl.includes(link.getAttribute('href'))) {
+                link.classList.add('active');
+            }
+        });
+    });
+</script>
+
 </body>
 </html>
